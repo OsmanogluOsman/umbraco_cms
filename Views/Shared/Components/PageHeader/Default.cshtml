@@ -1,0 +1,17 @@
+﻿@model UmbracoBlogCMS.App_Code.Models.ViewComponentModels.PageHeaderView;
+
+@if (Model != null)
+{
+    <div class="bradcam_area" style="background-image: url(@Model?.ImageUrl)">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>@Model?.Title</h3>
+                        <span>@Model?.SubTitle</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
